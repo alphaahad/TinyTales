@@ -121,3 +121,15 @@ if generate:
         with open(pdf_path, "rb") as f:
             st.download_button("Download Story as PDF", f, file_name="TinyTales_Story.pdf")
 
+st.markdown(
+    """
+    <hr style="margin-top: 50px; border-top: 1px solid #ccc;" />
+    <div style='text-align: center; color: #ffffff; font-size: 14px; padding-top: 10px;'>
+        Made with love by <b>Ahad Nadeem</b> 💙 &nbsp;|&nbsp; 
+        <a href='https://github.com/alphaahad' target='_blank' style='color: #ffffff; text-decoration: none;'>@alphaahad</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
