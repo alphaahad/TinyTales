@@ -113,7 +113,9 @@ if generate:
         st.success("Here's your TinyTale <3")
 
         st.markdown("### Your thoughts in our words -")
-        st.markdown(f"<div style='line-height: 1.7; font-size: 16px;'>{story_text.replace('\n', '<br>')}</div>", unsafe_allow_html=True)
+        html_story = story_text.replace('\n', '<br>')
+        st.markdown(f"<div style='line-height: 1.7; font-size: 16px;'>{html_story}</div>", unsafe_allow_html=True)
+
 
         pdf_path = create_pdf(story_text)
         with open(pdf_path, "rb") as f:
